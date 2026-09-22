@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Projects</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+
+</head>
+<body>
+      <br>
+    <h1>Welcome to our Bistro !</h1>
+    <br>
+
+
+<form>
+     <label>Menu:</label>
+    <br>
+    <br>
+
+    <label for="choose">Choose your cookie:
+        <select id="dubai">
+            <option value="0">Choose an option</option>
+            <option value="239"></option>
+            <option value="120"></option>
+            <option value="350"></option>
+            <option value="100"></option>
+
+            
+        </select>
+    </label>
+
+    <label><b>Pastries</b></label>
+    <br>
+    <input type="checkbox" id="item1" value="110">
+    <label for="item1">Americano</label>
+    <br>
+    <input type="checkbox" id="item2" value="160">
+    <label for="item1">Latte</label>
+    <br>
+    <input type="checkbox" id="item3" value="95">
+    <label for="item1">Cold Brew</label>
+    <br>
+    <input type="checkbox" id="item4" value="137">
+    <label for="item1">Iced Mocha</label>
+    <br>
+    <input type="checkbox" id="item5" value="145">
+    <label for="item1">Caramel Macchiato</label>
+    <br>
+    <br>
+
+    <label><b>Non-Coffee Drinks:</b></label>
+    <br>
+    <input type="checkbox" id="item6" value="130">
+    <label for="item1">Chai Tea</label>
+    <br>
+    <input type="checkbox" id="item7" value="120">
+    <label for="item1">Peach Tea</label>
+    <br>
+    <input type="checkbox" id="item8" value="90">
+    <label for="item1">Lemongrass Iced Tea</label>
+    <br>
+    <input type="checkbox" id="item9" value="90">
+    <label for="item1">Honey Black Tea</label>
+    <br>
+    <input type="checkbox" id="item10" value="125">
+    <label for="item1">Matcha Frappe</label>
+    <br>
+
+     <br>
+    <label for="choose"><b>Choose:</b></label>
+    <br>
+    <input type="radio" id="regular" value="0" name="size">
+    <label for="regular">Regular (+Php 0)</label>
+    <br>
+     <input type="radio" id="medium" value="15" name="size">
+    <label for="upsize">Medium(+Php 15)</label>
+    <br>
+     <input type="radio" id="tall" value="30" name="size">
+    <label for="upsize">Tall(+Php 30)</label>
+    <br>
+    <br>
+    <button type="button" py-click="create_order">Create Order</button>
+    <br>
+
+     <br> <br>
+    <p1> ——————— Receipt ——————— </p1>
+    <div id="output1"></div>
+    
+</body>
+</html>
