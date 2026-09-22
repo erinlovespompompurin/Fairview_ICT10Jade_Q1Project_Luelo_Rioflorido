@@ -7,17 +7,86 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
 
+    <style>
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    h1 {
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .menu {
+        text-align: left;
+    }
+   
+    form {
+        background-color: #94a091;
+        width: 500px;
+        padding: 35px 45px;
+        border-radius: 30px;
+        box-shadow: 0 10px 30px rgba(80, 60, 40, 0.18);
+    }
+
+    label {
+        font-size: 24px;
+    }
+
+    label {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #ffe6d5;
+    }
+
+    input {
+        accent-color: #8B6848;
+    }
+
+    button {
+        background-color: #8B6848;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 5px 12px rgba(80, 60, 40, 0.18);
+    }
+
+    button:hover {
+        background-color: #6F5036;
+    }
+
+    p1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bold;
+        color: #1e1105;
+    }
+
+    #output1 {
+        background-color: #FFFDF8;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+</style>
 
 </head>
 <body>
       <br>
-    <h1>Welcome to our Bistro !</h1>
+    <h1 >Make Your Own Chewy Bowl 🥣 </h1>
     <br>
 
 
 <form>
-     <label>Menu:</label>
-    <br>
     <br>
 
     <label for="choose">Choose your cookie:
@@ -28,58 +97,10 @@
             <option value="350"></option>
             <option value="100"></option>
 
-            
         </select>
     </label>
 
-    <label><b>Pastries</b></label>
-    <br>
-    <input type="checkbox" id="item1" value="110">
-    <label for="item1">Americano</label>
-    <br>
-    <input type="checkbox" id="item2" value="160">
-    <label for="item1">Latte</label>
-    <br>
-    <input type="checkbox" id="item3" value="95">
-    <label for="item1">Cold Brew</label>
-    <br>
-    <input type="checkbox" id="item4" value="137">
-    <label for="item1">Iced Mocha</label>
-    <br>
-    <input type="checkbox" id="item5" value="145">
-    <label for="item1">Caramel Macchiato</label>
-    <br>
-    <br>
 
-    <label><b>Non-Coffee Drinks:</b></label>
-    <br>
-    <input type="checkbox" id="item6" value="130">
-    <label for="item1">Chai Tea</label>
-    <br>
-    <input type="checkbox" id="item7" value="120">
-    <label for="item1">Peach Tea</label>
-    <br>
-    <input type="checkbox" id="item8" value="90">
-    <label for="item1">Lemongrass Iced Tea</label>
-    <br>
-    <input type="checkbox" id="item9" value="90">
-    <label for="item1">Honey Black Tea</label>
-    <br>
-    <input type="checkbox" id="item10" value="125">
-    <label for="item1">Matcha Frappe</label>
-    <br>
-
-     <br>
-    <label for="choose"><b>Choose:</b></label>
-    <br>
-    <input type="radio" id="regular" value="0" name="size">
-    <label for="regular">Regular (+Php 0)</label>
-    <br>
-     <input type="radio" id="medium" value="15" name="size">
-    <label for="upsize">Medium(+Php 15)</label>
-    <br>
-     <input type="radio" id="tall" value="30" name="size">
-    <label for="upsize">Tall(+Php 30)</label>
     <br>
     <br>
     <button type="button" py-click="create_order">Create Order</button>
