@@ -1,5 +1,4 @@
 
-
 from pyscript import display, document
 
 def create_order(e):
