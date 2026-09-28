@@ -33,4 +33,4 @@ def generate_sku(e):
 
     sku = category[:3].upper() + "-" + product[:4].upper() + "-" + str(stock)
 
-    display("SKU: ", sku, target="output1")
+    display("SKU: ", sku, target="output1") 
